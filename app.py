@@ -471,7 +471,7 @@ if __name__ == '__main__':
         init_db()
         print("Database initialized successfully!")
     
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 10000))
     debug = os.environ.get('FLASK_ENV') == 'development'
     print(f"Starting FashionHub API on http://0.0.0.0:{port}")
     app.run(debug=debug, host='0.0.0.0', port=port)
